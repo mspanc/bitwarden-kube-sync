@@ -82,9 +82,9 @@ spec:
   template:
     metadata:
       labels:
-        app: bitwarden-k8s-secret-sync
+        app: bitwarden-kube-sync
     spec:
-      serviceAccountName: bitwarden-k8s-secret-sync
+      serviceAccountName: bitwarden-kube-sync
       containers:
         - name: app
           image: mspanc/bitwarden-kube-sync:latest
